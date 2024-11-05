@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio PopOver</title>
+</head>
+<body>
+    
+    <div class="profile-container">
+
+        <div class="profile-header">
+
+            <h1>Perfil de SourCandy</h1>
+
+            <button class="help-button" popovertarget="help-name">Ajuda</button>
+
+            <div id="help-name" class="popover-content" popover>
+
+                O nome completo do usuário. Ele pode ser alterado nas configurações de perfil.
+
+            </div>
+
+        </div>
+        <p><strong>Nome:</strong> SourCandy</p>
+
+
+
+        <hr>
+
+        <div class="profile-header">
+            <h1>Informações de Contato</h1>
+            <button class="help-button" popover="auto" popover-target="#help-contact">Ajuda</button>
+        </div>
+        <p><strong>Email:</strong> abcdmartins40@gmail.com</p>
+
+        <div id="help-contact" class="popover-content" hidden>
+            Seu endereço de e-mail. Certifique-se de que está atualizado para receber notificações importantes.
+
+        </div>
+    </div>
+</body>
+</html>
